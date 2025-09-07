@@ -1,3 +1,4 @@
+
 (function () {
   "use strict";
   var fi,
@@ -30383,7 +30384,35 @@ void main() {
       ],
     });
   }
-  
+  function A_() {
+    const t = Oe();
+    return t.value.disable_banner
+      ? null
+      : b("p", {
+          className: he(
+            "whitespace-nowrap [line-height:var(--el-overlay-padding)] text-[10px] px-3",
+            t.value.placement.startsWith("top")
+              ? "-translate-y-[calc(var(--el-overlay-padding))]"
+              : "translate-y-[calc(var(--el-overlay-padding))]"
+          ),
+          children: [
+            b("span", {
+              className: "opacity-30",
+              children: "",
+            }),
+            " ",
+            b("a", {
+              href:
+                t.value.override_link ||
+                "",
+              className:
+                "underline cursor-pointer pointer-events-auto focus-visible:outline-none opacity-30 hover:opacity-50 focus-visible:opacity-100 focus-visible:underline-offset-2",
+              target: "_blank",
+              children: "",
+            }),
+          ],
+        });
+  }
   const ui = {
       left: "items-start",
       center: "items-center",
