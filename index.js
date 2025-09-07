@@ -1,4 +1,3 @@
-
 (function () {
   "use strict";
   var fi,
@@ -30398,17 +30397,17 @@ void main() {
           children: [
             b("span", {
               className: "opacity-30",
-              children: "",
+              children: "Powered by ElevenLabs",
             }),
             " ",
             b("a", {
               href:
                 t.value.override_link ||
-                "",
+                "https://elevenlabs.io/conversational-ai",
               className:
                 "underline cursor-pointer pointer-events-auto focus-visible:outline-none opacity-30 hover:opacity-50 focus-visible:opacity-100 focus-visible:underline-offset-2",
               target: "_blank",
-              children: "",
+              children: "Conversational AI",
             }),
           ],
         });
